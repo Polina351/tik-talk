@@ -39,3 +39,16 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
+
+input, textarea, select, button {
+    all: unset;
+    box-sizing: border-box;
+    font-family: inherit;
+    outline: none;
+
+    &:focus {
+        border: none;
+        outline: none
+    }
+}
+

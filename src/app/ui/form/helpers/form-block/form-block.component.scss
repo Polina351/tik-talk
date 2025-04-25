@@ -1,0 +1,23 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: fit-content;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    color: var(--light-solid);
+    box-sizing: border-box;
+
+    & .title {
+        color: var(--light-solid);
+    }
+
+    & .error {
+        color: var(--red-primary);
+    }
+}
+
+
