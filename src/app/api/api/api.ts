@@ -1,0 +1,13 @@
+export * from './account.service';
+import { AccountService } from './account.service';
+export * from './auth.service';
+import { AuthService } from './auth.service';
+export * from './chat.service';
+import { ChatService } from './chat.service';
+export * from './comment.service';
+import { CommentService } from './comment.service';
+export * from './message.service';
+import { MessageService } from './message.service';
+export * from './post.service';
+import { PostService } from './post.service';
+export const APIS = [AccountService, AuthService, ChatService, CommentService, MessageService, PostService];
