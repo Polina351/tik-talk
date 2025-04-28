@@ -1,0 +1,23 @@
+<div class="content">
+    <div class="form">
+        <p class="header">Вход</p>
+        <div class="form-block">
+            <div class="inputs">
+                <app-form-block [label]="'Telegram username'">
+                    <app-input>
+                        <svg app-telegram-icon></svg>
+                    </app-input>
+                </app-form-block>
+                <app-form-block [label]="'Пароль'">
+                    <app-input>
+                        <svg app-see-password-icon></svg>
+                    </app-input>
+                </app-form-block>
+            </div>
+            <button app-main-button [label]="'Войти'"></button>
+        </div>
+
+    </div>
+    <div class="image"></div>
+</div>
+
