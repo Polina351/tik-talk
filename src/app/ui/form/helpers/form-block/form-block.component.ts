@@ -8,6 +8,6 @@ import {ChangeDetectionStrategy, Component, input, InputSignal} from '@angular/c
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FormBlockComponent {
-    label: InputSignal<string> = input<string>('Field title');
-    error: InputSignal<string> = input<string>('Take an action');
+    label: InputSignal<string> = input<string>('');
+    error: InputSignal<string> = input<string>('');
 }

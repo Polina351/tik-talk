@@ -3,6 +3,7 @@ import {InputComponent} from '../../ui/form/input/input.component';
 import {FormBlockComponent} from '../../ui/form/helpers/form-block/form-block.component';
 import {TelegramIconComponent} from '../../icons/telegram-icon/telegram-icon.component';
 import {SeePasswordIconComponent} from '../../icons/see-password-icon/see-password-icon.component';
+import {MainButtonComponent} from '../../ui/buttons/main-button/main-button.component';
 
 @Component({
   selector: 'app-authorization',
@@ -10,7 +11,8 @@ import {SeePasswordIconComponent} from '../../icons/see-password-icon/see-passwo
         InputComponent,
         FormBlockComponent,
         TelegramIconComponent,
-        SeePasswordIconComponent
+        SeePasswordIconComponent,
+        MainButtonComponent
     ],
   templateUrl: './authorization.component.html',
   styleUrl: './authorization.component.scss',

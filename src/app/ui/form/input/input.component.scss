@@ -1,5 +1,6 @@
 :host {
     display: flex;
+    gap: 16px;
     justify-content: space-between;
 
     border: 1px solid var(light-solid);
@@ -30,5 +31,6 @@
 
     & input {
         background: var(--dark-solid);
+        width: 100%;
     }
 }
