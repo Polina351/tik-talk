@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, input, InputSignal, output} from '@angular/core';
+import {ChangeDetectionStrategy, Component, input, InputSignal, output, OutputEmitterRef} from '@angular/core';
 
 @Component({
     selector: 'button[app-main-button]',
@@ -14,10 +14,9 @@ import {ChangeDetectionStrategy, Component, input, InputSignal, output} from '@a
 export class MainButtonComponent {
     label: InputSignal<string> = input<string>('label');
 
-    buttonClick = output<void>();
+    buttonClick: OutputEmitterRef<void> = output<void>();
 
-    protected onButtonClick() {
-        console.log('buttonClick');
+    protected onButtonClick(): void {
         this.buttonClick.emit();
     }
 }
